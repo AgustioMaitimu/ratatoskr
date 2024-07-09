@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import SectionFive from '@/components/home/SectionFive';
 import SectionFour from '@/components/home/SectionFour';
 import SectionOne from '@/components/home/SectionOne';
 import SectionThree from '@/components/home/SectionThree';
@@ -19,6 +20,7 @@ export default function Home() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFive />
       <div></div>
     </main>
   );
