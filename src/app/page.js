@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import SectionFour from '@/components/home/SectionFour';
 import SectionOne from '@/components/home/SectionOne';
 import SectionThree from '@/components/home/SectionThree';
 import SectionTwo from '@/components/home/SectionTwo';
@@ -11,10 +12,13 @@ const code = Source_Code_Pro({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <main className={`${inter.className} flex flex-col gap-24 lg:gap-32`}>
+    <main
+      className={`${inter.className} flex flex-col items-center gap-24 lg:gap-32`}
+    >
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
       <div></div>
     </main>
   );
