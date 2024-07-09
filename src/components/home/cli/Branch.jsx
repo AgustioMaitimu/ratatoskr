@@ -45,10 +45,10 @@ function Branch() {
         </div>
         <div className="flex flex-col gap-1">
           <h1>HASH</h1>
-          <p className="">f6e5d4c3b2a1 ...</p>
-          <p className="font-bold">b6c5d4e3f2a1 ...</p>
-          <p className="">9f8e7d6c5b4a ...</p>
-          <p className="">5a4b3c2d1e0f ...</p>
+          <p className="">f6e5d4c3b ...</p>
+          <p className="font-bold">b6c5d4e3f ...</p>
+          <p className="">9f8e7d6c5 ...</p>
+          <p className="">5a4b3c2d1 ...</p>
         </div>
       </div>
     </div>

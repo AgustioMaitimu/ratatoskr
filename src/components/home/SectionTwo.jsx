@@ -15,7 +15,7 @@ function SectionTwo() {
   return (
     <div className="flex w-full flex-col items-center gap-5 bg-[#F7F7F7] bg-[url('/background-1.png')] bg-cover px-6 py-36 midway:rounded-2xl">
       <div
-        className={`flex w-full max-w-[350px] justify-evenly rounded-full bg-black px-1 py-2 font-light text-white`}
+        className={`flex w-full max-w-[350px] justify-evenly rounded-full bg-black p-2 font-light text-white`}
       >
         <p
           onClick={(e) => setPickedExample(e.target.innerHTML)}
