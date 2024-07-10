@@ -15,7 +15,7 @@ function SectionSeven() {
   return (
     <Element
       name="join"
-      className="flex w-full max-w-[1200px] items-center justify-center bg-[url('/background-2.avif')] bg-cover px-5 py-20 midway:rounded-3xl midway:py-14"
+      className="fade-up flex w-full max-w-[1200px] items-center justify-center bg-[url('/background-2.avif')] bg-cover px-5 py-20 midway:rounded-3xl midway:py-14"
     >
       <div className="glass flex w-full max-w-[632px] flex-col items-center gap-8 rounded-xl p-5 midway:p-10">
         <div className="relative aspect-square w-20">

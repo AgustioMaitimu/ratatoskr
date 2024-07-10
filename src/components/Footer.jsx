@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 function Footer() {
   return (
     <div
-      className={`${inter.className} flex w-full max-w-[984px] flex-col gap-8 p-6 midway:flex-row midway:items-start midway:justify-between midway:gap-0`}
+      className={`${inter.className} fade-up mb-[12vh] flex w-full max-w-[984px] flex-col gap-8 p-6 midway:flex-row midway:items-start midway:justify-between midway:gap-0`}
     >
       <div className="flex w-52 flex-col gap-4">
         <div className="flex items-center gap-4">

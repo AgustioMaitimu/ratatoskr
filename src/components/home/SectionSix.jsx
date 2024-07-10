@@ -4,7 +4,7 @@ import React from 'react';
 function SectionSix() {
   return (
     <div className="flex w-full max-w-[960px] flex-col gap-20 p-6">
-      <div className="flex flex-col items-center gap-4 text-2xl font-bold">
+      <div className="fade-up flex flex-col items-center gap-4 text-2xl font-bold">
         <div className="relative aspect-square w-20">
           <Image
             alt="version control"
@@ -15,7 +15,7 @@ function SectionSix() {
         </div>
         <h1>Serverless runtime</h1>
       </div>
-      <div className="flex flex-col gap-7 midway:flex-row midway:items-center midway:justify-between">
+      <div className="fade-up flex flex-col gap-7 midway:flex-row midway:items-center midway:justify-between">
         <div className="relative aspect-square w-full rounded-xl midway:w-[47%]">
           <Image
             alt="pic"
@@ -36,7 +36,7 @@ function SectionSix() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-7 midway:flex-row-reverse midway:items-center midway:justify-between">
+      <div className="fade-up flex flex-col gap-7 midway:flex-row-reverse midway:items-center midway:justify-between">
         <div className="relative aspect-square w-full rounded-xl midway:w-[47%]">
           <Image
             alt="pic"
@@ -56,7 +56,7 @@ function SectionSix() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-7 midway:flex-row midway:items-center midway:justify-between">
+      <div className="fade-up flex flex-col gap-7 midway:flex-row midway:items-center midway:justify-between">
         <div className="relative aspect-square w-full rounded-xl midway:w-[47%]">
           <Image
             alt="pic"

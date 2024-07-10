@@ -7,7 +7,7 @@ import SlideableTwo from './cli/SlideableTwo';
 function SectionFive() {
   return (
     <div className="flex w-full max-w-[960px] flex-col gap-20 p-6">
-      <div className="flex flex-col items-center gap-4 text-2xl font-bold">
+      <div className="fade-up flex flex-col items-center gap-4 text-2xl font-bold">
         <div className="relative aspect-square w-20">
           <Image
             alt="version control"
@@ -18,7 +18,7 @@ function SectionFive() {
         </div>
         <h1>Data Lake version control</h1>
       </div>
-      <div className="flex flex-col gap-7 midway:flex-row-reverse midway:items-center midway:justify-between">
+      <div className="fade-up flex flex-col gap-7 midway:flex-row-reverse midway:items-center midway:justify-between">
         <SlideableOne />
         <div className="flex flex-col gap-8 midway:w-[47%]">
           <h1 className="text-[19px] font-semibold">
@@ -31,7 +31,7 @@ function SectionFive() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-7 midway:flex-row midway:items-center midway:justify-between">
+      <div className="fade-up flex flex-col gap-7 midway:flex-row midway:items-center midway:justify-between">
         <SlideableTwo />
         <div className="flex flex-col gap-8 midway:w-[47%]">
           <h1 className="text-[19px] font-semibold">
@@ -44,7 +44,7 @@ function SectionFive() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-7 midway:flex-row-reverse midway:items-center midway:justify-between">
+      <div className="fade-up flex flex-col gap-7 midway:flex-row-reverse midway:items-center midway:justify-between">
         <div className="relative aspect-square w-full rounded-xl bg-gray-200 midway:w-[47%]">
           <Image
             src="/cli-5.avif"

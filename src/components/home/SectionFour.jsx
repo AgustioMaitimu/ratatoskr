@@ -2,7 +2,7 @@ import React from 'react';
 
 function SectionFour() {
   return (
-    <div className="flex max-w-[960px] flex-col gap-12 p-6 text-[26px] midway:text-3xl">
+    <div className="fade-up flex max-w-[960px] flex-col gap-12 p-6 text-[26px] midway:text-3xl">
       <div className="mb-2 flex items-center self-center">
         <div className="aspect-square w-6 rounded-full border-2 border-black"></div>
         <div className="h-[2px] w-10 bg-black"></div>
