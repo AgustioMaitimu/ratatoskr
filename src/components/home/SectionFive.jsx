@@ -1,5 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import React from 'react';
+import SlideableOne from './cli/SlideableOne';
+import SlideableTwo from './cli/SlideableTwo';
 
 function SectionFive() {
   return (
@@ -16,7 +19,7 @@ function SectionFive() {
         <h1>Data Lake version control</h1>
       </div>
       <div className="flex flex-col gap-7 midway:flex-row-reverse midway:items-center midway:justify-between">
-        <div className="aspect-square w-full rounded-xl bg-gray-200 midway:w-[47%]"></div>
+        <SlideableOne />
         <div className="flex flex-col gap-8 midway:w-[47%]">
           <h1 className="text-[19px] font-semibold">
             Instant branching of your data lake
@@ -29,7 +32,7 @@ function SectionFive() {
         </div>
       </div>
       <div className="flex flex-col gap-7 midway:flex-row midway:items-center midway:justify-between">
-        <div className="aspect-square w-full rounded-xl bg-gray-200 midway:w-[47%]"></div>
+        <SlideableTwo />
         <div className="flex flex-col gap-8 midway:w-[47%]">
           <h1 className="text-[19px] font-semibold">
             Make everything reproducible
@@ -42,7 +45,14 @@ function SectionFive() {
         </div>
       </div>
       <div className="flex flex-col gap-7 midway:flex-row-reverse midway:items-center midway:justify-between">
-        <div className="aspect-square w-full rounded-xl bg-gray-200 midway:w-[47%]"></div>
+        <div className="relative aspect-square w-full rounded-xl bg-gray-200 midway:w-[47%]">
+          <Image
+            src="/cli-5.avif"
+            layout="fill"
+            className="object-cover"
+            alt="pic"
+          />
+        </div>
         <div className="flex flex-col gap-8 midway:w-[47%]">
           <h1 className="text-[19px] font-bold">Avoid lock-in</h1>
           <p className="-mt-3 text-xl font-light">
