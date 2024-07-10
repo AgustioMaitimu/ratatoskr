@@ -1,6 +1,16 @@
+'use client';
 import React from 'react';
 import { Inter, Montserrat } from 'next/font/google';
 import Image from 'next/image';
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+} from 'react-scroll';
+import JoinButtonHeader from './JoinButtonHeader';
 
 const inter = Inter({ subsets: ['latin'] });
 const montserrat = Montserrat({ subsets: ['latin'] });
@@ -50,9 +60,7 @@ function Header() {
             className="object-cover"
           />
         </div>
-        <button className="rounded-full bg-blue-500 px-5 py-3 font-light text-white">
-          Join private alpha
-        </button>
+        <JoinButtonHeader />
       </div>
     </div>
   );
