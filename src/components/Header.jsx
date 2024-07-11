@@ -20,7 +20,7 @@ function Header() {
       className={`${inter.className} flex w-full max-w-[1000px] items-center justify-between p-6`}
     >
       <Menu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
-      <div className="flex items-center gap-4">
+      <Link href="/" className="flex items-center gap-4">
         <div className="relative aspect-square w-12">
           <Image
             alt="logo"
@@ -30,7 +30,7 @@ function Header() {
           />
         </div>
         <h1 className="text-3xl font-semibold">sqrel</h1>
-      </div>
+      </Link>
       <div className="md:hidden">
         <div
           className="relative mr-2 block aspect-square w-8"
@@ -45,7 +45,7 @@ function Header() {
         </div>
       </div>
       <div className="hidden items-center gap-8 md:flex">
-        <h1>Blog</h1>
+        <Link href="/blog">Blog</Link>
         <h1>Docs</h1>
         <div className="relative aspect-square w-6">
           <Image

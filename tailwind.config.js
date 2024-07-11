@@ -15,6 +15,9 @@ module.exports = {
       screens: {
         midway: '820px',
       },
+      aspectRatio: {
+        blog: '1.5/1',
+      },
     },
   },
   plugins: [],
