@@ -6,12 +6,12 @@ import SectionSeven from '@/components/home/SectionSeven';
 import SectionSix from '@/components/home/SectionSix';
 import SectionThree from '@/components/home/SectionThree';
 import SectionTwo from '@/components/home/SectionTwo';
-import { Inter, Montserrat, Source_Code_Pro } from 'next/font/google';
+import JoinButtonHeader from '@/components/JoinButtonHeader';
+import { Inter } from 'next/font/google';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
-const montserrat = Montserrat({ subsets: ['latin'] });
-const code = Source_Code_Pro({ subsets: ['latin'] });
 
 export default function Home() {
   return (

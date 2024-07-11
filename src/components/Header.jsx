@@ -1,25 +1,25 @@
 'use client';
-import React from 'react';
-import { Inter, Montserrat } from 'next/font/google';
+import React, { useState } from 'react';
+import { Inter } from 'next/font/google';
 import Image from 'next/image';
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-} from 'react-scroll';
 import JoinButtonHeader from './JoinButtonHeader';
+import Link from 'next/link';
+import Menu from './Menu';
 
 const inter = Inter({ subsets: ['latin'] });
-const montserrat = Montserrat({ subsets: ['latin'] });
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div
       className={`${inter.className} flex w-full max-w-[1000px] items-center justify-between p-6`}
     >
+      <Menu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
       <div className="flex items-center gap-4">
         <div className="relative aspect-square w-12">
           <Image
@@ -32,9 +32,12 @@ function Header() {
         <h1 className="text-3xl font-semibold">sqrel</h1>
       </div>
       <div className="md:hidden">
-        <div className="relative mr-2 aspect-square w-8">
+        <div
+          className="relative mr-2 block aspect-square w-8"
+          onClick={toggleMenu}
+        >
           <Image
-            alt="logo"
+            alt="menu"
             layout="fill"
             className="object-cover"
             src="/menu.svg"

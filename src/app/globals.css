@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.hide-menu {
+  transform: translateY(-100%);
+}
+
+.show-menu {
+  transform: translateY(0%);
+}
+
 .glass {
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-thin {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .fade-up {
