@@ -1,19 +1,29 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import JoinButtonHeader from './JoinButtonHeader';
 import { Inter } from 'next/font/google';
 import { Button } from 'react-scroll';
+import { usePathname } from 'next/navigation';
 
 const inter = Inter({ subsets: ['latin'] });
 
 function Menu({ isOpen, toggleMenu }) {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    isOpen && toggleMenu();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
+
   return (
     <div
       className={`${inter.className} ${isOpen ? 'show-menu' : 'hide-menu'} glass-thin fixed left-0 top-0 z-10 flex h-fit w-screen flex-col gap-6 bg-white p-6 transition-all duration-500`}
     >
       <div className="flex w-full items-center justify-between">
-        <div className="flex items-center gap-4">
+        <Link href="/" className="flex items-center gap-4">
           <div className="relative aspect-square w-12">
             <Image
               alt="logo"
@@ -23,7 +33,7 @@ function Menu({ isOpen, toggleMenu }) {
             />
           </div>
           <h1 className="text-3xl font-semibold">sqrel</h1>
-        </div>
+        </Link>
         <div className="relative mr-1 aspect-square w-6" onClick={toggleMenu}>
           <Image
             alt="exit"
