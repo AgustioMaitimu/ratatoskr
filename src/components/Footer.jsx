@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -30,7 +31,7 @@ function Footer() {
         </h1>
       </div>
       <div className="flex flex-col gap-2 text-sm font-medium">
-        <h1>Blog</h1>
+        <Link href="/">Blog</Link>
         <h1>Docs</h1>
         <h1>We&apos;re hiring</h1>
         <h1>Security</h1>
