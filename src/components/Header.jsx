@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Inter } from 'next/font/google';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import JoinButtonHeader from './JoinButtonHeader';
 import Link from 'next/link';
 import Menu from './Menu';

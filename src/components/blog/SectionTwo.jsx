@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import React from 'react';
 import articles from '@/lib/articles';
 
@@ -12,7 +12,7 @@ function SectionTwo() {
             key={index}
             className="flex w-full flex-col items-start gap-8 midway:flex-row midway:items-center midway:justify-between midway:gap-0"
           >
-            <div className="aspect-blog relative w-full cursor-pointer midway:w-[48.8%]">
+            <div className="relative aspect-blog w-full cursor-pointer midway:w-[48.8%]">
               <Image
                 alt="logo"
                 layout="fill"

@@ -8,7 +8,7 @@ import SectionThree from '@/components/home/SectionThree';
 import SectionTwo from '@/components/home/SectionTwo';
 import JoinButtonHeader from '@/components/JoinButtonHeader';
 import { Inter } from 'next/font/google';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
