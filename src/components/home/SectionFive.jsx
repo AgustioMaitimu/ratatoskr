@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import React from 'react';
 import SlideableOne from './cli/SlideableOne';
 import SlideableTwo from './cli/SlideableTwo';
